@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Head from 'next/head'
+import Link from 'next/link'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -138,7 +139,7 @@ export default function Layout({ children, home }) {
 						>
 							<MenuIcon />
 						</IconButton>
-						<Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>Portail Auteur</Typography>
+						<Link href="/"><Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>Portail Auteur</Typography></Link>
 						<IconButton color="inherit">
 							<Badge badgeContent={4} color="secondary">
 								<NotificationsIcon />

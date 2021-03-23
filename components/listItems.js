@@ -4,39 +4,45 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import Link from 'next/link'
 
 export const mainListItems = (
 	<div>
-		<ListItem button>
-			<ListItemIcon>
-				<LibraryBooksIcon />
-			</ListItemIcon>
-			<ListItemText primary="Mes Titres" />
-		</ListItem>
+		<Link href="Titres">
+			<ListItem button>
+				<ListItemIcon>
+					<LibraryBooksIcon />
+				</ListItemIcon>
+				<ListItemText primary="Mes Titres" />
+			</ListItem>
+		</Link>
+		<Link href="Documents">
 		<ListItem button>
 			<ListItemIcon>
 				<ListAltIcon />
 			</ListItemIcon>
 			<ListItemText primary="Mes Documents" />
 		</ListItem>
+		</Link>
+		<Link href="Cessions">
 		<ListItem button>
 			<ListItemIcon>
 				<PeopleIcon />
 			</ListItemIcon>
 			<ListItemText primary="Mes Cessions" />
 		</ListItem>
+		</Link >
+		<Link href="Account">
 		<ListItem button>
 			<ListItemIcon>
 				<BarChartIcon />
 			</ListItemIcon>
 			<ListItemText primary="Mon Compte Auteur" />
-		</ListItem>
+	</ListItem>
+		</Link >
 	</div>
 );
 
