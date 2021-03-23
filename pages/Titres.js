@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<Layout home>
 			<Grid item xs={12}>
-				<Paper>
+				<Paper style={{ padding: 20, display: 'flex', overflow: 'auto', flexDirection: 'column' }}>
 					<Livres />
 				</Paper>
 			</Grid>
