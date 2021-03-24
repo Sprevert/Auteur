@@ -3,8 +3,10 @@ import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
+import Avatar from '@material-ui/core/Avatar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -140,11 +142,13 @@ export default function Layout({ children, home }) {
 							<MenuIcon />
 						</IconButton>
 						<Link href="/"><Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>Portail Auteur</Typography></Link>
+
 						<IconButton color="inherit">
 							<Badge badgeContent={4} color="secondary">
-								<NotificationsIcon />
+								<Avatar alt="Jean Christophe Rufin" src="/rufin.jpg" />
 							</Badge>
 						</IconButton>
+
 					</Toolbar>
 				</AppBar>
 				<Drawer
